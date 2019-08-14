@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- My CSS File-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Overall Bootstrap Grid -->
+    <div class="container">
+
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron navbar-dark bg-primary">
+            <h1 class="text-center">
+                <strong>Anytime is Train Time</strong>
+            </h1>
+            <h4 class="text-center">
+                <strong>Choo Choo Chee Chee</strong>
+            </h4>
+            <hr>
+            <div id="header" class="text-center">
+            </div>
+        </div>
+
+        <div class="tableContainer">
+            <div class="navbar navbar-dark bg-primary">
+                <span class="navbar-brand mb-0 h1">Current Train Schedule</span>
+            </div>
+
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <br>
+        <div class="addTrainContainer">
+            <div class="navbar navbar-dark bg-primary">
+                <span class="navbar-brand mb-0 h1">Add Train</span>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Train Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Destination</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput3">First Train Time (HH:mm military time)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Another input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput4">Frequency (mins)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
+                </div>
+                <button id="submitButton" type="submit" class="btn btn-primary my-1">Submit</button>
+            </form>
+        </div>
+
+
+        <!-- Local Forage File-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"
+            integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
+
+        <!-- My Javascript File -->
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
