@@ -28,12 +28,11 @@
             </div>
         </div>
 
-        <div class="tableContainer">
-            <div class="navbar navbar-dark bg-primary">
-                <span class="navbar-brand mb-0 h1">Current Train Schedule</span>
-            </div>
+        <div class="border border-primary">
 
             <table class="table table-bordered">
+                <fieldset>
+                <legend class="navbar navbar-dark bg-primary">Current Train Schedule:</legend>
                 <thead class="thead-light">
                     <tr>
                         <th scope="col">Train Name</th>
@@ -44,7 +43,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
@@ -64,39 +63,40 @@
                         <td>@mdo</td>
                         <td>Mark</td>
                         <td>Otto</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
 
 
         <br>
-        <div class="addTrainContainer">
-            <div class="navbar navbar-dark bg-primary">
-                <span class="navbar-brand mb-0 h1">Add Train</span>
-            </div>
+        <div class="border border-primary">
             <form>
+                <fieldset>
+                <legend class="navbar navbar-dark bg-primary">Add Train:</legend>
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Train Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    <label for="name">Train Name</label>
+                    <input type="text" class="form-control" id="train-name" placeholder="Type Train Name">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Destination</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    <label for="dest">Destination</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Type Destination">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput3">First Train Time (HH:mm military time)</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Another input">
+                    <label for="time">First Train Time</label>
+                    <input type="time" class="form-control" id="first-train-time" placeholder="HH:mm">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput4">Frequency (mins)</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
+                    <label for="mins">Frequency (mins)</label>
+                    <input type="number" min="1" max="120"class="form-control" id="frequency-mins" placeholder="00">
                 </div>
-                <button id="submitButton" type="submit" class="btn btn-primary my-1">Submit</button>
+                <button id="submitButton" type="submit" class="btn btn-primary my-1">Submit</button> <!-- removed onclick="addRow();" -->
             </form>
         </div>
 
-
+        <!-- Moment js script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+        
         <!-- Local Forage File-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"
             integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
