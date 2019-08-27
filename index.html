@@ -31,7 +31,7 @@
         <div class="border border-primary">
             <button onclick="addRow();" type="submit" class="">Click to update: Last updated at "currentTime"</button> <!-- need to figure out how to get currenttime variable to show up-->
 
-            <table class="table table-bordered">
+            <table class="table table-bordered ">
                 <fieldset>
                 <legend class="navbar navbar-dark bg-primary">Current Train Schedule:</legend>
                 <thead class="thead-light">
@@ -43,14 +43,14 @@
                         <th scope="col">Minutes Away</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="train-row">
+                <tbody id ="trainInfoTable" >
+                    <!-- <tr class="train-row">
                         <td id="td1"></td>
                         <td id="td2"></td>
                         <td id="td3"></td>
                         <td id="td4"></td>
                         <td id="td5"></td>
-                    </tr>
+                    </tr>-->
                 </tbody>
             </table>
         </div>
