@@ -1,2 +1,5 @@
 # Train-Scheduler
-In this assignment, you'll create a train schedule application that incorporates localForage to host arrival and departure data. Your app will retrieve and manipulate this information with Moment.js. This website will provide up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
+I created a train schedule application that incorporates localForage to host arrival and departure data. The app retrieves and manipulates this information with Moment.js. The website will provide up-to-date information about various trains, namely the arrival times and how many minutes remain until they arrive at the station.
+<br>
+<br>
+[Click here](https://calahhansen.github.io/Train-Scheduler/index.html) to view.
